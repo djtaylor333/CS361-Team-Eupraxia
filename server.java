@@ -27,14 +27,14 @@ public class server {
 	 */
     public static void main(String[] args) throws IOException, InterruptedException {
 
-        BufferedWriter fOut; // the object to be used to write to the 362project.out file
+        BufferedWriter fOut; // the object to be used to write to the 361project.out file
 		System.out.println("-------------------------------------------------------------------------------------");
-		System.out.println("                            Opening File 362project.in");
+		System.out.println("                            Opening File 361project.in");
 
 		// open the 372project input file so it can be parsed for data
 		try{
 			// Open the file
-			FileInputStream fstream = new FileInputStream("362project.in");
+			FileInputStream fstream = new FileInputStream("361project.in");
 
 			// Get the object of DataInputStream
 			DataInputStream in = new DataInputStream(fstream);
@@ -53,7 +53,7 @@ public class server {
 		}
 
 		System.out.println("-------------------------------------------------------------------------------------");
-		System.out.println("              creating or deleting, and recreating File 372project.out");
+		System.out.println("              creating or deleting, and recreating File 361project.out");
 
 		// set up the output file
 		String file_name = "372project.out";
