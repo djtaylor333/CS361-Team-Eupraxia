@@ -13,3 +13,62 @@
  * .java
  *
  */
+ 
+import java.io.*;
+import java.util.*;
+
+public class server {
+
+    /**
+	 * requires a file in its root directory called 361project.in
+	 * this server parses the file for the data it needs to generate the virtual HWY.
+	 * this server will also generate a file called 362project.out
+	 * !!!! please note !!!! if the file already exists it will delete it without asking!
+	 */
+    public static void main(String[] args) throws IOException, InterruptedException {
+
+        BufferedWriter fOut; // the object to be used to write to the 362project.out file
+		System.out.println("-------------------------------------------------------------------------------------");
+		System.out.println("                            Opening File 362project.in");
+
+		// open the 372project input file so it can be parsed for data
+		try{
+			// Open the file
+			FileInputStream fstream = new FileInputStream("362project.in");
+
+			// Get the object of DataInputStream
+			DataInputStream in = new DataInputStream(fstream);
+			BufferedReader br = new BufferedReader(new InputStreamReader(in));
+			String strLine;
+
+			// loop through the file line by line and add data to array
+			while ((strLine = br.readLine()) != null){
+				projectInput.add(strLine);
+			}
+			//Close the input stream
+			in.close();
+		}
+		catch (Exception ex){//Catch exception if any
+			System.err.println("Error: " + ex.getMessage());
+		}
+
+		System.out.println("-------------------------------------------------------------------------------------");
+		System.out.println("              creating or deleting, and recreating File 372project.out");
+
+		// set up the output file
+		String file_name = "372project.out";
+		File file = new File(file_name);
+		boolean exist = file.createNewFile();
+		if(!exist){
+			file.delete();
+		}
+		FileWriter fstream = new FileWriter(file_name);
+		fOut = new BufferedWriter(fstream);
+
+		System.out.println("-------------------------------------------------------------------------------------");
+		System.out.println("               parsing input file for data and creating virtual HWY");
+        
+        String str = projectInput.get(0);
+		String[] data = str.split(" ");
+    }
+}
