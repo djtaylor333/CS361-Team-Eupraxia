@@ -10,7 +10,9 @@
  * CS361 - Fall 2011
  * Sensor-based smart vehicle Simulation
  *
- * .java
+ * server.java
+ * the server is responsible for reading the 361projectinput and initializing the virtual HWY
+ * 
  *
  */
  
