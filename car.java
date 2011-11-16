@@ -5,7 +5,7 @@
  * Justin Field
  * Jason Peinkofer
  * David Taylor
- * Marcos Zavala
+ * Marcos Zavala almanza
  * 
  * CS361 - Fall 2011
  * Sensor-based smart vehicle Simulation
