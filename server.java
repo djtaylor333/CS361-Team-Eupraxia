@@ -55,19 +55,6 @@ public class server {
 		}
 
 		System.out.println("-------------------------------------------------------------------------------------");
-		System.out.println("              creating or deleting, and recreating File 361project.out");
-
-		// set up the output file
-		String file_name = "372project.out";
-		File file = new File(file_name);
-		boolean exist = file.createNewFile();
-		if(!exist){
-			file.delete();
-		}
-		FileWriter fstream = new FileWriter(file_name);
-		fOut = new BufferedWriter(fstream);
-
-		System.out.println("-------------------------------------------------------------------------------------");
 		System.out.println("               parsing input file for data and creating virtual HWY");
         
         String str = projectInput.get(0);
