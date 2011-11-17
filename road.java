@@ -14,7 +14,7 @@
  *
  */
 
-public class car{
+public class road{
 	
 	
 }
