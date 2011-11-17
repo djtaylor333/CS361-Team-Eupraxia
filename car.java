@@ -17,14 +17,19 @@
 public class car{
 	private double speed;
 	private String carName;
-	private int location;
+	
+	//dont know how to got about determining location of the car
+	//this is what I think might work, in the array store the lane number and the second array element would be
+	//the location on that lane
+	private int[] location = new int[2] ; 
 
 	/*first Constructor*/
-	public car( double speed, String carName, int location){
+	public car( double speed, String carName, int lane, int laneLoc){
 
 		this.speed= speed;
 		this.CarName= carName;
-		this.location = location;
+		this.location[0] = lane;
+		this.location[1] = laneLoc;
 	}
 
 	/*getter for car speed*/
