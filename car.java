@@ -16,7 +16,7 @@
 
 public class car{
 	private double speed;
-	private String carID;
+	private String CarID;
 	private int lane;  //lane number, 0,1 or 2
 	private int laneLoc;	//location within the lane
 	
@@ -26,10 +26,10 @@ public class car{
 	private int[] location = new int[2] ; 
 
 	/*first Constructor*/
-	public car( double speed, String carName, int lane, int laneLoc){
+	public car( double speed, String CarID, int lane, int laneLoc){
 
 		this.speed= speed;
-		this.CarID= carID;
+		this.CarID= CarID;
 		this.location[0] = lane;
 		this.location[1] = laneLoc;
 	}
@@ -41,7 +41,7 @@ public class car{
 
 	/*getter for car name*/
 	public String getCarID(){
-		return carID;
+		return CarID;
 	}
 
 	/*getter for car location within the lane*/
@@ -61,7 +61,7 @@ public class car{
 
 	/*setter for  car name*/
 	public void setCarID(String str){
-		carID=str;
+		CarID=str;
 	}
 		
 	/*setter for car location*/
