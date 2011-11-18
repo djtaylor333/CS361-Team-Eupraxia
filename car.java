@@ -42,11 +42,15 @@ public class car{
 		return carName;
 	}
 
-	/*getter for car location*/
-	public int getLocation(){
-		return location;
+	/*getter for car location within the lane*/
+	public int getLaneLocation(){
+		return location[1];
 	}
 
+	/*getter for car lane*/
+	public int getLane(){
+		return location[0];
+	}
 
 	/*setter for car speed*/
 	public void setSpeed(double spd){
@@ -59,8 +63,9 @@ public class car{
 	}
 
 	/*setter for car location*/
-	public void setLocation(int loc){
-		location= loc;
+	public void setLocation(int lane, int laneLoc){
+		location[0]= lane;
+		location[1]= laneLoc;
 	}
 
 	/*method to increase car speed*/
